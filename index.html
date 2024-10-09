@@ -123,10 +123,21 @@
             -webkit-transform: rotatey(-180deg);
             -ms-transform: rotatey(-180deg);
             transform: rotatey(-180deg);
+        }
+        audio{
+            display:none;
+        }
     </style>
 </head>
 <body>
-    <img src="1.gif" alt="">
+ <audio  controls autoplay loop id="autoplay" >
+    <source src="tum.mp3" type="audio/mp3">
+    </audio>
+   <script>
+    window.onload=function(){
+        document.getElementById("autoplay").play();
+    }
+   </script>
 <div id="container">
     <div class="book">
 <div class="page"></div>
